@@ -65,3 +65,15 @@ class ZurielsVideoGameSuggestions:
             "Super Smash Bros. Melee",
             "Super Smash Bros. Ultimate",
         ]
+
+        # Choose a random video game
+        videogame = random.choice(videogames)
+
+        # Display the video game
+        self.activity_label.config(text=f"You should try: {videogame}")
+
+
+# Create the main application window
+root = tk.Tk()
+app = ZurielsVideoGameSuggestions(root)
+root.mainloop()
